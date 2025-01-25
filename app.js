@@ -9,6 +9,6 @@ app.use(morgan('dev'))
 app.use('/api', api)
 
 app.listen(5000, ()=>{
-    console.log(`Server Started on https://localhost:${process.env.PORT}`)
+    console.log(`Server Started on https://localhost:5000}`)
 })
 
