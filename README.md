@@ -1,38 +1,50 @@
-# Realtor Data API - Project Documentation
+<h1 align="center" id="title">House API</h1>
 
-## Overview
-This project, known as **House API**, is a RESTful API designed to provide access to real estate data. It uses a public dataset and interacts with a read-only database.  
+<p id="description">is a RESTFUL API for house selling from a public dataset and a database free-to-use</p>
 
-## Endpoints
-The House API offers the following endpoints (defined in `api/src/api.js`):
+  
+  
+<h2>🧐 Features</h2>
 
-*   **GET /**: Returns a welcome message.
-*   **GET /properties**: Retrieves all the properties from the database.
-* **GET /properties/:id**: Retrieves a specific property by its ID.
-* **GET /properties/city/:city**: Retrieves all the properties from the database by city.
-* **GET /properties/type/:type**: Retrieves all the properties from the database by type.
+Here're some of the project's best features:
 
-These endpoints allow you to interact with the real estate data stored in the read-only database.
+*   Is best for house-selling apps in development for developers who doens\`t want to make a db already
+*   Have very much informations
+*   Developer-Friendly
+*   Have DataSet Integrated
 
-## Technologies Used
+<h2>🛠️ Installation Steps:</h2>
 
-*   **Node.js:** The core runtime environment for executing the JavaScript application.
-*   **JavaScript:** The primary programming language used for the project's logic.
-*   **Database (db.js):**  A database system (the specific type is defined in `api/db.js` ) is used to store and retrieve data.
-*   **API (api.js):**  An API (defined in `api/src/api.js`) built to provide endpoints for interacting with the application's data and functionality.
-*   **CSV Data Processing:** The `realtor-data.zip.csv` file indicates the project handles data in CSV format, likely used for initial data loading or data import/export operations.
-* **npm:** Package manager for Node.js, used to manage the project's dependencies (defined in `package.json` and `package-lock.json`)
-* **Nix:** Nix package manager is used to manage the project's environment and dependencies. (defined in `.idx/dev.nix`)
-* **VSCode (or IDX):** The project includes configuration for visual studio code for development (defined in `.vscode/settings.json`)
-*   **RESTful API:** The project exposes a RESTful API, allowing for standard HTTP methods (GET, etc.) to interact with the data.
-*   **Read-Only Database:** The database is intended to be read-only, meaning you can only retrieve data, not modify it.
+<p>1. Clone Repository</p>
 
-## File Structure
+```
+git clone https://github.com/trudix121/House-API.git
+```
 
-*   `app.js`: The main entry point for the Node.js application.
-*   `api/db.js`: Contains the code for interacting with the database.
-*   `api/src/api.js`: Implements the API endpoints and logic.
-*   `realtor-data.zip.csv`: The data file containing realtor information in CSV format.
-* `package.json`, `package-lock.json`: Manage the project dependencies.
-* `.idx/dev.nix`: Project environment.
-* `.vscode/settings.json`: Project configuration for visual studio code.
+<p>2. Install Dependencies</p>
+
+```
+npm install
+```
+
+<p>3. Run Server</p>
+
+```
+npm run dev
+```
+
+<p>4. (Optional) Install PostMan to Test it</p>
+
+```
+https://www.postman.com/downloads/
+```
+
+  
+  
+<h2>💻 Built with</h2>
+
+Technologies used in the project:
+
+*   NodeJS
+*   Express
+*   MongoDB
